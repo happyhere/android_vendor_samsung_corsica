@@ -26,6 +26,9 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/corsica/proprietary/bin/glgps:system/bin/glgps \
     vendor/samsung/corsica/proprietary/bin/gps.cer:system/bin/gps.cer \
     vendor/samsung/corsica/proprietary/bin/gpslogd:system/bin/gpslogd \
+    vendor/samsung/corsica/proprietary/bin/hostapd:system/bin/hostapd \
+    vendor/samsung/corsica/proprietary/bin/netd:system/bin/netd \
+    vendor/samsung/corsica/proprietary/bin/wpa_supplicant:system/bin/wpa_supplicant \
     vendor/samsung/corsica/proprietary/bin/immvibed:system/bin/immvibed \
     vendor/samsung/corsica/proprietary/bin/macloader:system/bin/macloader \
     vendor/samsung/corsica/proprietary/bin/mttlogger:system/bin/mttlogger \
@@ -36,17 +39,15 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/corsica/proprietary/etc/DiamondVoice.txt:system/etc/DiamondVoice.txt \
     vendor/samsung/corsica/proprietary/etc/gps/glconfig.xml:system/etc/gps/glconfig.xml \
     vendor/samsung/corsica/proprietary/etc/gps.conf:system/etc/gps.conf \
+    vendor/samsung/corsica/proprietary/etc/calib.dat:system/etc/calib.dat \
+    vendor/samsung/corsica/proprietary/etc/sensors.dat:system/etc/sensors.dat \
     vendor/samsung/corsica/proprietary/etc/srm.bin:system/etc/srm.bin \
     vendor/samsung/corsica/proprietary/etc/Volume.db:system/etc/Volume.db \
     vendor/samsung/corsica/proprietary/etc/wifi/bcmdhd_apsta.bin:system/etc/wifi/bcmdhd_apsta.bin \
     vendor/samsung/corsica/proprietary/etc/wifi/bcmdhd_sta.bin:system/etc/wifi/bcmdhd_sta.bin \
-    vendor/samsung/corsica/proprietary/etc/wifi/bcmdhd_p2p.bin:system/etc/wifi/bcmdhd_p2p.bin \
-    vendor/samsung/corsica/proprietary/etc/wifi/bcmdhd_mfg.bin:system/etc/wifi/bcmdhd_mfg.bin \
     vendor/samsung/corsica/proprietary/etc/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt \
-    vendor/samsung/corsica/proprietary/etc/wifi/nvram_mfg.txt:system/etc/wifi/nvram_mfg.txt \
     vendor/samsung/corsica/proprietary/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
     vendor/samsung/corsica/proprietary/lib/hw/alsa.default.so:system/lib/hw/alsa.default.so \
-    vendor/samsung/corsica/proprietary/lib/hw/audio.primary.rhea.so:system/lib/hw/audio.primary.rhea.so \
     vendor/samsung/corsica/proprietary/lib/hw/gps.rhea.so:system/lib/hw/gps.rhea.so \
     vendor/samsung/corsica/proprietary/lib/hw/lights.rhea.so:system/lib/hw/lights.rhea.so \
     vendor/samsung/corsica/proprietary/lib/hw/sensors.rhea.so:system/lib/hw/sensors.rhea.so \
@@ -55,16 +56,16 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/corsica/proprietary/lib/lib_Samsung_SB_AM_for_ICS_v03008.so:system/lib/lib_Samsung_SB_AM_for_ICS_v03008.so \
     vendor/samsung/corsica/proprietary/lib/lib_SamsungRec_V02002.so:system/lib/lib_SamsungRec_V02002.so \
     vendor/samsung/corsica/proprietary/lib/lib_SoundAlive_V01013h.so:system/lib/lib_SoundAlive_V01013h.so \
-    vendor/samsung/corsica/proprietary/lib/libaacdecoderwrapper.so:system/lib/libaacdecoderwrapper.so \
     vendor/samsung/corsica/proprietary/lib/libat.so:system/lib/libat.so \
+    vendor/samsung/corsica/proprietary/lib/libaacdecoderwrapper.so:system/lib/libaacdecoderwrapper.so \
     vendor/samsung/corsica/proprietary/lib/libat_stubs.so:system/lib/libat_stubs.so \
     vendor/samsung/corsica/proprietary/lib/libatlog.so:system/lib/libatlog.so \
-    vendor/samsung/corsica/proprietary/lib/libbrcm_ril.so:system/lib/libbrcm_ril.so \
     vendor/samsung/corsica/proprietary/lib/libbrcmaacenc.so:system/lib/libbrcmaacenc.so \
     vendor/samsung/corsica/proprietary/lib/libbrcmamrnbaridec.so:system/lib/libbrcmamrnbaridec.so \
     vendor/samsung/corsica/proprietary/lib/libbrcmamrnbarienc.so:system/lib/libbrcmamrnbarienc.so \
     vendor/samsung/corsica/proprietary/lib/libbrcmamrwbaridec.so:system/lib/libbrcmamrwbaridec.so \
     vendor/samsung/corsica/proprietary/lib/libbrcmamrwbarienc.so:system/lib/libbrcmamrwbarienc.so \
+    vendor/samsung/corsica/proprietary/lib/libbrcm_ril.so:system/lib/libbrcm_ril.so \
     vendor/samsung/corsica/proprietary/lib/libbrcmcutils.so:system/lib/libbrcmcutils.so \
     vendor/samsung/corsica/proprietary/lib/libbrcmheaacdecoder.so:system/lib/libbrcmheaacdecoder.so \
     vendor/samsung/corsica/proprietary/lib/libbrcmmp3dec.so:system/lib/libbrcmmp3dec.so \
@@ -108,15 +109,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/corsica/proprietary/lib/libVCE_csl.so:system/lib/libVCE_csl.so \
     vendor/samsung/corsica/proprietary/lib/libVCE_driver.so:system/lib/libVCE_driver.so \
     vendor/samsung/corsica/proprietary/lib/modules/VoiceSolution.ko:system/lib/modules/VoiceSolution.ko \
-    vendor/samsung/corsica/proprietary/lib/soundfx/libaudiopreprocessing.so:system/lib/soundfx/libaudiopreprocessing.so \
-    vendor/samsung/corsica/proprietary/lib/soundfx/libbundlewrapper.so:system/lib/soundfx/libbundlewrapper.so \
-    vendor/samsung/corsica/proprietary/lib/soundfx/libdownmix.so:system/lib/soundfx/libdownmix.so \
-    vendor/samsung/corsica/proprietary/lib/soundfx/libreverbwrapper.so:system/lib/soundfx/libreverbwrapper.so \
-    vendor/samsung/corsica/proprietary/lib/soundfx/libvisualizer.so:system/lib/soundfx/libvisualizer.so \
-    vendor/samsung/corsica/proprietary/usr/lib/alsa-lib/libasound_module_pcm_bcmfilter.so:system/usr/lib/alsa-lib/libasound_module_pcm_bcmfilter.so \
-    vendor/samsung/corsica/proprietary/usr/lib/alsa-lib/libbcm_hp_filter.so:system/usr/lib/alsa-lib/libbcm_hp_filter.so \
-    vendor/samsung/corsica/proprietary/usr/lib/alsa-lib/libbcm_test_filter.so:system/usr/lib/alsa-lib/libbcm_test_filter.so \
-    vendor/samsung/corsica/proprietary/usr/share/alsa/alsa.conf:system/usr/share/alsa/alsa.conf \
+    vendor/samsung/corsica/proprietary/lib/hw/audio.primary.rhea.so:system/lib/hw/audio.primary.rhea.so \
     vendor/samsung/corsica/proprietary/lib/hw/camera.rhea.so:system/lib/hw/camera.rhea.so \
     vendor/samsung/corsica/proprietary/lib/hw/gralloc.rhea.so:system/lib/hw/gralloc.rhea.so \
     vendor/samsung/corsica/proprietary/lib/hw/hwcomposer.rhea.so:system/lib/hw/hwcomposer.rhea.so \
@@ -130,13 +123,65 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/corsica/proprietary/lib/libISP.so:system/lib/libISP.so \
     vendor/samsung/corsica/proprietary/lib/liblvvefs.so:system/lib/liblvvefs.so \
     vendor/samsung/corsica/proprietary/lib/libacdapi_azi.so:system/lib/libacdapi_azi.so \
-   vendor/samsung/corsica/proprietary/vendor/gfx.fw:system/vendor/gfx.fw \
    vendor/samsung/corsica/proprietary/etc/media_codecs.xml:system/etc/media_codecs.xml \
-   vendor/samsung/corsica/proprietary/bin/wlandutservice:system/bin/wlandutservice \
-   vendor/samsung/corsica/proprietary/bin/p2p_supplicant:system/bin/p2p_supplicant \
+   vendor/samsung/corsica/proprietary/etc/media_profiles.xml:system/etc/media_profiles.xml \
    vendor/samsung/corsica/proprietary/bin/btld:system/bin/btld \
-   vendor/samsung/corsica/proprietary/bin/mfgloader:system/bin/mfgloader \
     vendor/samsung/corsica/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
     vendor/samsung/corsica/proprietary/lib/libomission_avoidance.so:system/lib/libomission_avoidance.so \
     vendor/samsung/corsica/proprietary/lib/libfactoryutil.so:system/lib/libfactoryutil.so \
+    vendor/samsung/corsica/proprietary/usr/lib/alsa-lib/libasound_module_pcm_bcmfilter.so:system/usr/lib/alsa-lib/libasound_module_pcm_bcmfilter.so \
+    vendor/samsung/corsica/proprietary/usr/lib/alsa-lib/libbcm_hp_filter.so:system/usr/lib/alsa-lib/libbcm_hp_filter.so \
+    vendor/samsung/corsica/proprietary/usr/lib/alsa-lib/libbcm_test_filter.so:system/usr/lib/alsa-lib/libbcm_test_filter.so \
+    vendor/samsung/corsica/proprietary/usr/share/alsa/alsa.conf:system/usr/share/alsa/alsa.conf \
+    vendor/samsung/corsica/proprietary/lib/lib_ARC_Omx_Plugin.so:system/lib/lib_ARC_Omx_Plugin.so \
+    vendor/samsung/corsica/proprietary/lib/libaudiopolicy_sec.so:system/lib/libaudiopolicy_sec.so \
+    vendor/samsung/corsica/proprietary/lib/libcodec_util.so:system/lib/libcodec_util.so \
+    vendor/samsung/corsica/proprietary/lib/libcontrolcsc.so:system/lib/libcontrolcsc.so \
+    vendor/samsung/corsica/proprietary/lib/libdeblock.so:system/lib/libdeblock.so \
+    vendor/samsung/corsica/proprietary/lib/libh263_dec_p3.so:system/lib/libh263_dec_p3.so \
+    vendor/samsung/corsica/proprietary/lib/libh263_dummy_enc.so:system/lib/libh263_dummy_enc.so \
+    vendor/samsung/corsica/proprietary/lib/libh263_enc_p3.so:system/lib/libh263_enc_p3.so \
+    vendor/samsung/corsica/proprietary/lib/libh264_dec_bp.so:system/lib/libh264_dec_bp.so \
+    vendor/samsung/corsica/proprietary/lib/libh264_dec_hp.so:system/lib/libh264_dec_hp.so \
+    vendor/samsung/corsica/proprietary/lib/libh264_dummy_enc.so:system/lib/libh264_dummy_enc.so \
+    vendor/samsung/corsica/proprietary/lib/libh264_enc_bp.so:system/lib/libh264_enc_bp.so \
+    vendor/samsung/corsica/proprietary/lib/libmp3_dec_dummy.so:system/lib/libmp3_dec_dummy.so \
+    vendor/samsung/corsica/proprietary/lib/libmp3_enc_dummy.so:system/lib/libmp3_enc_dummy.so \
+    vendor/samsung/corsica/proprietary/lib/libmpeg4_dec_asp.so:system/lib/libmpeg4_dec_asp.so \
+    vendor/samsung/corsica/proprietary/lib/libmpeg4_dummy_enc.so:system/lib/libmpeg4_dummy_enc.so \
+    vendor/samsung/corsica/proprietary/lib/libmpeg4_enc_sp.so:system/lib/libmpeg4_enc_sp.so \
+    vendor/samsung/corsica/proprietary/lib/libmpeg4_fake_dec.so:system/lib/libmpeg4_fake_dec.so \
+    vendor/samsung/corsica/proprietary/lib/libOMX.brcm.audio.dummy.decoder.so:system/lib/libOMX.brcm.audio.dummy.decoder.so \
+    vendor/samsung/corsica/proprietary/lib/libOMX.brcm.video.dummy.decoder.so:system/lib/libOMX.brcm.video.dummy.decoder.so \
+   vendor/samsung/corsica/proprietary/lib/libOMX.brcm.video.dummy.encoder.so:system/lib/libOMX.brcm.video.dummy.encoder.so \
+   vendor/samsung/corsica/proprietary/lib/libOMX.brcm.video.h263.decoder.so:system/lib/libOMX.brcm.video.h263.decoder.so \
+   vendor/samsung/corsica/proprietary/lib/libOMX.brcm.video.h263.encoder.so:system/lib/libOMX.brcm.video.h263.encoder.so \
+   vendor/samsung/corsica/proprietary/lib/libOMX.brcm.video.h264.decoder.so:system/lib/libOMX.brcm.video.h264.decoder.so \
+   vendor/samsung/corsica/proprietary/lib/libOMX.brcm.video.h264.encoder.so:system/lib/libOMX.brcm.video.h264.encoder.so \
+   vendor/samsung/corsica/proprietary/lib/libOMX.brcm.video.mpeg4.decoder.so:system/lib/libOMX.brcm.video.mpeg4.decoder.so \
+   vendor/samsung/corsica/proprietary/lib/libOMX.brcm.video.mpeg4.encoder.so:system/lib/libOMX.brcm.video.mpeg4.encoder.so \
+   vendor/samsung/corsica/proprietary/lib/libOMX.brcm.video.vpx.decoder.so:system/lib/libOMX.brcm.video.vpx.decoder.so \
+   vendor/samsung/corsica/proprietary/lib/libSamsungAnimation.so:system/lib/libSamsungAnimation.so \
+   vendor/samsung/corsica/proprietary/lib/libsamsungAsf.so:system/lib/libsamsungAsf.so \
+   vendor/samsung/corsica/proprietary/lib/lib_Samsung_ASF_for_ICS_v01.so:system/lib/lib_Samsung_ASF_for_ICS_v01.so \
+   vendor/samsung/corsica/proprietary/lib/libSamsungPDLComposer_MD.so:system/lib/libSamsungPDLComposer_MD.so \
+   vendor/samsung/corsica/proprietary/lib/libsamsungpowersound.so:system/lib/libsamsungpowersound.so \
+   vendor/samsung/corsica/proprietary/lib/lib_SamsungRec_V01006.so:system/lib/lib_SamsungRec_V01006.so \
+   vendor/samsung/corsica/proprietary/lib/libsamsungtts.so:system/lib/libsamsungtts.so \
+   vendor/samsung/corsica/proprietary/lib/libseccameracore.so:system/lib/libseccameracore.so \
+   vendor/samsung/corsica/proprietary/lib/libseccamera_jni.so:system/lib/libseccamera_jni.so \
+   vendor/samsung/corsica/proprietary/lib/libsec_cryptomnt.so:system/lib/libsec_cryptomnt.so \
+   vendor/samsung/corsica/proprietary/lib/libsec_devenc.so:system/lib/libsec_devenc.so \
+   vendor/samsung/corsica/proprietary/lib/libsec_ecryptfs.so:system/lib/libsec_ecryptfs.so \
+   vendor/samsung/corsica/proprietary/lib/libsecface.so:system/lib/libsecface.so \
+   vendor/samsung/corsica/proprietary/lib/libsecfips.so:system/lib/libsecfips.so \
+   vendor/samsung/corsica/proprietary/lib/libsecjpegboard.so:system/lib/libsecjpegboard.so \
+   vendor/samsung/corsica/proprietary/lib/libsecjpeginterface.so:system/lib/libsecjpeginterface.so \
+   vendor/samsung/corsica/proprietary/lib/libsec_km.so:system/lib/libsec_km.so \
+   vendor/samsung/corsica/proprietary/lib/libsecmediarecorder_jni.so:system/lib/libsecmediarecorder_jni.so \
+   vendor/samsung/corsica/proprietary/lib/lib_SoundAlive_for_ICS_V01013a.so:system/lib/lib_SoundAlive_for_ICS_V01013a.so \
+   vendor/samsung/corsica/proprietary/lib/libtiming.so:system/lib/libtiming.so \
+   vendor/samsung/corsica/proprietary/lib/libv3d.so:system/lib/libv3d.so \
+   vendor/samsung/corsica/proprietary/lib/libv4a_fx_ics.so:system/lib/libv4a_fx_ics.so \
+   vendor/samsung/corsica/proprietary/lib/libvwengine.so:system/lib/libvwengine.so \
     vendor/samsung/corsica/proprietary/lib/libbralloc.so:system/lib/libbralloc.so
