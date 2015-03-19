@@ -101,15 +101,16 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/corsica/proprietary/lib/libdeblock.so:system/lib/libdeblock.so \
     vendor/samsung/corsica/proprietary/lib/libv3d.so:system/lib/libv3d.so \
     vendor/samsung/corsica/proprietary/lib/libtiming.so:system/lib/libtiming.so \
-    vendor/samsung/corsica/proprietary/lib/libOMX.brcm.video.decoder.mpeg4.so:system/lib/libOMX.brcm.video.decoder.mpeg4.so \
-    vendor/samsung/corsica/proprietary/lib/libOMX.brcm.video.encoder.mpeg4.so:system/lib/libOMX.brcm.video.encoder.mpeg4.so \
-    vendor/samsung/corsica/proprietary/lib/libOMX.brcm.video.decoder.vpx.so:system/lib/libOMX.brcm.video.decoder.vpx.so \
-    vendor/samsung/corsica/proprietary/lib/libOMX.brcm.video.encoder.h264.so:system/lib/libOMX.brcm.video.encoder.h264.so \
-    vendor/samsung/corsica/proprietary/lib/libOMX.brcm.video.decoder.h264.so:system/lib/libOMX.brcm.video.decoder.h264.so \
-    vendor/samsung/corsica/proprietary/lib/libOMX.brcm.video.encoder.h263.so:system/lib/libOMX.brcm.video.encoder.h263.so \
-    vendor/samsung/corsica/proprietary/lib/libOMX.brcm.video.decoder.h263.so:system/lib/libOMX.brcm.video.decoder.h263.so \
-    vendor/samsung/corsica/proprietary/lib/libOMX.brcm.video.encoder.dummy.so:system/lib/libOMX.brcm.video.encoder.dummy.so \
-    vendor/samsung/corsica/proprietary/lib/libOMX.brcm.video.decoder.dummy.so:system/lib/libOMX.brcm.video.decoder.dummy.so \
+ vendor/samsung/corsica/proprietary/lib/libOMX.brcm.audio.dummy.decoder.so:system/lib/libOMX.brcm.audio.dummy.decoder.so \
+ vendor/samsung/corsica/proprietary/lib/libOMX.brcm.video.dummy.decoder.so:system/lib/libOMX.brcm.video.dummy.decoder.so \
+ vendor/samsung/corsica/proprietary/lib/libOMX.brcm.video.dummy.encoder.so:system/lib/libOMX.brcm.video.dummy.encoder.so \
+ vendor/samsung/corsica/proprietary/lib/libOMX.brcm.video.h263.decoder.so:system/lib/libOMX.brcm.video.h263.decoder.so \
+ vendor/samsung/corsica/proprietary/lib/libOMX.brcm.video.h263.encoder.so:system/lib/libOMX.brcm.video.h263.encoder.so \
+ vendor/samsung/corsica/proprietary/lib/libOMX.brcm.video.h264.decoder.so:system/lib/libOMX.brcm.video.h264.decoder.so \
+ vendor/samsung/corsica/proprietary/lib/libOMX.brcm.video.h264.encoder.so:system/lib/libOMX.brcm.video.h264.encoder.so \
+ vendor/samsung/corsica/proprietary/lib/libOMX.brcm.video.mpeg4.decoder.so:system/lib/libOMX.brcm.video.mpeg4.decoder.so \
+ vendor/samsung/corsica/proprietary/lib/libOMX.brcm.video.mpeg4.encoder.so:system/lib/libOMX.brcm.video.mpeg4.encoder.so \
+ vendor/samsung/corsica/proprietary/lib/libOMX.brcm.video.vpx.decoder.so:system/lib/libOMX.brcm.video.vpx.decoder.so \
     vendor/samsung/corsica/proprietary/usr/lib/alsa-lib/libasound_module_pcm_bcmfilter.so:system/usr/lib/alsa-lib/libasound_module_pcm_bcmfilter.so \
     vendor/samsung/corsica/proprietary/usr/lib/alsa-lib/libbcm_hp_filter.so:system/usr/lib/alsa-lib/libbcm_hp_filter.so \
     vendor/samsung/corsica/proprietary/usr/lib/alsa-lib/libbcm_test_filter.so:system/usr/lib/alsa-lib/libbcm_test_filter.so \
